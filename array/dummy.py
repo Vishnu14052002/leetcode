@@ -5,7 +5,7 @@ class Solution:
         p2 = 0
         for i in range(len(nums1)):
             if dnum1[p1] < nums2[p2]:
-                print(dnum1[p1], nums2[p2], i, p1, "in " , i, "iteration")
+                print(dnum1[p1], nums2[p2], i, p1, "in " , i, "itation")
                 nums1[i] = dnum1[p1]
                 print(nums1, "in first")
                 p1 += 1
