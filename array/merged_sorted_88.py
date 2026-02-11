@@ -4,7 +4,7 @@ class Solution(object):
         for i in range(m, (m+n)):
             nums1[i] = nums2[count]
             count = count + 1
-        print(nums1)
+        print(nums1.sort())
         nums1.sort()
         
 

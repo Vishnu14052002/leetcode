@@ -3,28 +3,18 @@ class Solution:
         dnum1 = nums1.copy()
         p1 = 0
         p2 = 0
+
         for i in range(len(nums1)):
-            if dnum1[p1] < nums2[p2]:
-                print("nums1 - ",nums1)
-                print("dnum1 - ", dnum1)
-                print("nums2 - ", nums2)
-                print("i - ", i)
-                print("p1 - ", p1)
-                print("p2 - ", p2)
+            if p2 >= n or (p1 < m and dnum1[p1] < nums2[p2]):
                 nums1[i] = dnum1[p1]
-                print(nums1, "in first")
                 p1 += 1
-            
-            if dnum1[p1] > nums2[p2]:
-                print("nums1 - ",nums1)
-                print("dnum1 - ", dnum1)
-                print("nums2 - ", nums2)
-                print("i - ", i)
-                print("p1 - ", p1)
-                print("p2 - ", p2)
+
+            else:
                 nums1[i] = nums2[p2]
-                print(nums1, "in second")
                 p2 += 1
+
+            print(nums1)
+
 
         print(nums1)
 
@@ -34,7 +24,7 @@ class Solution:
 obj = Solution()
 nums1 = [1,2,3,0,0,0]
 m = 3
-nums2 = [2,5,6]
+nums2 = [1,1,1]
 n = 3
 
 obj.dummy(nums1, nums2, m, n)
