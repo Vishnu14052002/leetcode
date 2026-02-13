@@ -1,9 +1,7 @@
 class Solution:
     def dummy(self, nums):
 
-            
 
-        print(nums, p1, p2)
 
 
 
