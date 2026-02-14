@@ -1,15 +1,13 @@
 class Solution:
-    def dummy(self, nums):
-        curr_count = 0
-        fin_count = 0
-        for i in range(len(nums)):
-            if nums[i] == 1:
-                curr_count += 1
+    def dummy(self, s):
+        leng = int(len(s) / 2)
+        p2 = len(s)-1
+        print(p2)
+        for p1 in range(leng):
+            s[p1], s[p2] = s[p2], s[p1]
+            p2 -= 1
             
-            if nums[i] != 1:
-                fin_count = curr_count
-                curr_count = 0
-        print(curr_count, fin_count)
+        print(s)
 
 
 
@@ -20,7 +18,6 @@ class Solution:
 
 
 obj = Solution()
-nums = [1,1,0,1,1,1]
-
-obj.dummy(nums)
+s = ["h","e","l","l","o"]
+obj.dummy(s)
 
