@@ -1,20 +1,23 @@
 class Solution:
-    def dummy(self, nums):
-        res = 0 
-        for i in nums:
-            res = i ^ res
-            print(res)
-        print(res)
-        print(2^1)
+    def dummy(self, prices):
+        max_profit = 0
+        min_price = prices[0]
+        for i in range(1, len(prices)):
+            if prices[i] < min_price:
+                min_price = prices[i]
 
+            tempmax = prices[i] - min_price
+            if max_profit < tempmax:
+                max_profit = tempmax
+        print(max_profit, min_price)
 
-
+            
 
 
 
 
 
 obj = Solution()
-nums = [4,1,2,1,2]
-obj.dummy(nums)
+prices = [7,6,4,3,1]
+obj.dummy(prices)
 
