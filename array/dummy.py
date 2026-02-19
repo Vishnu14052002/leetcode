@@ -1,21 +1,16 @@
 class Solution:
-    def dummy(self, nums, target):
-        left = 0
-        right = len(nums) - 1
-        print(right)
-        while(right >= left):
-            middle = int((left + right) / 2)
-            if nums[middle] == target:
-                return middle
-            elif nums[middle] < target:
-                print(nums[middle], 'nums[middle]')
-                left = middle + 1
-            else:
-                right = middle - 1
-            print('middle',middle)
-            print('right',right)
-            print('left',left)
-        return -1
+    def dummy(self, nums):
+        p1 = 0
+        for p2 in range(len(nums)):
+            if nums[p2] != 0:
+                nums[p1] = nums[p2]
+                p1 += 1 
+        for i in range(p1, len(nums)):
+            nums[i] = 0 
+            
+        return nums
+
+
             
 
 
@@ -26,7 +21,6 @@ class Solution:
 
 
 obj = Solution()
-target = 12
-nums = [-1,0,3,5,9,12]
-a = obj.dummy(nums, target)
+nums = [1]
+a = obj.dummy(nums)
 print(a)
