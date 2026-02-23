@@ -8,23 +8,7 @@ class Solution:
             if dummy[p1] >= nums2[p2]:
                 nums1[i] =  nums2[p2]
                 p2 += 1
-                i += 1
-            elif dummy[p1] <= nums2[p2]:
-                nums1[i] = dummy[p1]
-                p1 += 1
-                i += 1
-            print(p1,p2, i)
-            print(nums1)
-            
-        if p1 < m:
-            for ii in range(i, len(nums1)):
-                nums1[ii] = dummy[p1]
-                p1 += 1
-        elif p2 < n: 
-            for ii in range(i, len(nums1)):
-                nums1[ii] = nums2[p2]
-                p2 += 1
-        print(nums1)
+
 
 
 obj = Solution()
