@@ -5,11 +5,7 @@ class Solution:
         p2 = 0
         i = 0
         while p1 < m and p2 < n:
-            if dummy[p1] >= nums2[p2]:
-                nums1[i] =  nums2[p2]
-                p2 += 1
-
-
+    
 
 obj = Solution()
 m = 3
