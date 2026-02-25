@@ -5,6 +5,12 @@ class Solution:
         p2 = 0
         i = 0
         while p1 < m and p2 < n:
+            dummy = nums1.copy()
+        p1 = 0
+        p2 = 0
+        i = 0
+        while p1 < m and p2 < n:
+    
     
 
 obj = Solution()
