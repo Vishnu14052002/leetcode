@@ -2,14 +2,7 @@ class Solution:
     def dummy(self, nums1, nums2, m, n):
         dummy = nums1.copy()
         p1 = 0
-        p2 = 0
-        i = 0
-        while p1 < m and p2 < n:
-            dummy = nums1.copy()
-        p1 = 0
-        p2 = 0
-        i = 0
-        while p1 < m and p2 < n:
+
     
     
 
