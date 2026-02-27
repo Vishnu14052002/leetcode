@@ -1,7 +1,13 @@
 class Solution:
     def dummy(self, nums1, nums2, m, n):
         dummy = nums1.copy()
+        p1 = 0       dummy = nums1.copy()
+        p1 = 0       dummy = nums1.copy()
         p1 = 0
+       dummy = nums1.copy()
+        p1 = 0
+
+
 
     
     
