@@ -3,9 +3,6 @@ class Solution:
         dummy = nums1.copy()
         p1 = 0       dummy = nums1.copy()
         p1 = 0       dummy = nums1.copy()
-        p1 = 0
-       dummy = nums1.copy()
-        p1 = 0
 
 
 
